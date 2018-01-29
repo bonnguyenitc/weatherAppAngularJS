@@ -16,7 +16,7 @@ weatherApp.controller('forecastController',['$scope','$resource','$routeParams',
     
     $scope.weatherResult = $scope.weatherAPI.get({ q: $scope.city, cnt: $scope.days, lang: 'vi', units: 'metric', APPID: '279b4be6d54c8bf6ea9b12275a567156' });
     
-    console.log($scope.weatherResult);
+    //console.log($scope.weatherResult);
     
     $scope.convertToDate = function(dt) {
         return new Date(dt * 1000);
